@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Market | Ramadan 2026 Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4285f4;
+            --primary-light: #1a2233;
+            --primary-dark: #8ab4f8;
+            --secondary: #34a853;
+            --secondary-light: #1a2a1e;
+            --warning: #fbbc04;
+            --warning-light: #332a1a;
+            --danger: #ea4335;
+            --danger-light: #331f1e;
+            --gray-100: #1e1e1e;
+            --gray-200: #2d2d2d;
+            --gray-300: #3d3d3d;
+            --gray-400: #4d4d4d;
+            --gray-500: #777777;
+            --gray-600: #a0a0a0;
+            --gray-700: #c0c0c0;
+            --gray-800: #e0e0e0;
+            --gray-900: #f0f0f0;
+            --bg-color: #000000;
+            --card-bg: #121212;
+            --section-bg: #181818;
+            --france-blue: #0055a4;
+            --france-white: #ffffff;
+            --france-red: #ef4135;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--gray-800);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--france-blue), #003d75);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, var(--france-blue) 33.3%, var(--france-white) 33.3%, var(--france-white) 66.6%, var(--france-red) 66.6%);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin: 30px 0 20px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--gray-900);
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            background-color: var(--section-bg);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--gray-300);
+        }
+        
+        .insight-card {
+            background-color: var(--primary-light);
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .strategy-card {
+            background-color: var(--warning-light);
+            border-left: 5px solid var(--warning);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .metric-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid var(--gray-300);
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 10px 0;
+        }
+        
+        .metric-value-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 10px 0;
+            line-height: 1.3;
+        }
+        
+        .metric-label {
+            font-size: 1rem;
+            color: var(--gray-600);
+        }
+        
+        .action-steps {
+            background-color: var(--secondary-light);
+            border-left: 5px solid var(--secondary);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .action-steps h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        
+        .action-steps ul {
+            margin-left: 20px;
+        }
+        
+        .action-steps li {
+            margin-bottom: 10px;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .nav-button i {
+            margin-right: 8px;
+        }
+        
+        .nav-button.next i {
+            margin-right: 0;
+            margin-left: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid var(--gray-300);
+            color: var(--gray-600);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>France Market Analysis</h1>
+            <p>Ramadan 2026 Campaign Strategy & Insights</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2><i class="fas fa-chart-pie"></i> Market Overview</h2>
+            <p>The France market shows the highest consideration for Abu Dhabi (89%) and previous travel experience (35%) among European markets, with a balanced interest across different Ramadan experiences and lower cultural sensitivity concerns than other European markets.</p>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Consideration for Abu Dhabi</div>
+                    <div class="metric-value">89%</div>
+                    <div>Highest among all markets</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Previous Travel Experience</div>
+                    <div class="metric-value">35%</div>
+                    <div>Highest among European markets</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Deep Understanding of Ramadan</div>
+                    <div class="metric-value">12%</div>
+                    <div>Highest among European markets</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Market Potential Score</div>
+                    <div class="metric-value">78</div>
+                    <div>Highest among European markets</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-exclamation-triangle"></i> Key Misconceptions</h2>
+            <p>Despite having the highest deep understanding of Ramadan among European markets (12%), French travelers still hold several misconceptions that need to be addressed:</p>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Women's Participation</div>
+                    <div class="metric-value">41%</div>
+                    <div>Believe women are discouraged from public events during Ramadan</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Women's Mobility</div>
+                    <div class="metric-value">38%</div>
+                    <div>Believe women must stay home during Ramadan</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Iftar Knowledge</div>
+                    <div class="metric-value">60%</div>
+                    <div>Cannot correctly identify Iftar as the sunset meal</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Dining Concerns</div>
+                    <div class="metric-value">36%</div>
+                    <div>Concerned about not being allowed to drink during the day</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-calendar-alt"></i> Booking Behavior & Timeline</h2>
+            <p>French travelers show distinct booking patterns that inform campaign timing and messaging strategy. With the highest previous travel experience among European markets, French visitors represent a more experienced segment:</p>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Average Lead Time</div>
+                    <div class="metric-value">61</div>
+                    <div>Days before travel</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Previous Travel Experience</div>
+                    <div class="metric-value">35%</div>
+                    <div>Have visited during Ramadan</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Positive Experience Rating</div>
+                    <div class="metric-value">56%</div>
+                    <div>Among previous visitors</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Campaign Launch</div>
+                    <div class="metric-value">Mid Dec</div>
+                    <div>Optimal timing for 2026</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-chart-line"></i> Competitive Destination Analysis</h2>
+            <p>Despite high consideration for Abu Dhabi (89%), French travelers also consider other destinations for Ramadan travel. Understanding this competitive landscape helps position Abu Dhabi effectively:</p>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Top Competitor</div>
+                    <div class="metric-value-text">Egypt</div>
+                    <div>88% consideration</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Second Competitor</div>
+                    <div class="metric-value-text">Turkey</div>
+                    <div>78% consideration</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Abu Dhabi Advantage</div>
+                    <div class="metric-value-text">Premium Experience</div>
+                    <div>Higher quality infrastructure</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Positioning Strategy</div>
+                    <div class="metric-value-text">Authentic Yet Accessible</div>
+                    <div>vs. competitive set</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="insight-card">
+            <h3><i class="fas fa-lightbulb"></i> Key Insight: Balanced Experience Interest</h3>
+            <p>French travelers show the most balanced interest across all Ramadan experience types (cultural performances: 46%, traditional food: 42%, lantern displays: 45%, Iftar meals: 31%) compared to other European markets. This indicates an opportunity to offer diverse, multi-faceted Ramadan experiences that appeal to their broad cultural interests.</p>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-bullseye"></i> Strategic Recommendations</h2>
+            
+            <h3>1. Positioning Strategy: "Authentic Yet Accessible"</h3>
+            <p>Position Abu Dhabi as a destination that offers authentic Ramadan experiences with tourist-friendly accommodations. Emphasize the cultural richness and accessibility of Ramadan experiences for French visitors, highlighting the balance between authenticity and comfort.</p>
+            
+            <h3>2. Experience Development</h3>
+            <p>Create a range of balanced experiences that appeal to French travelers:</p>
+            <ul>
+                <li><strong>Immersive Nighttime Experiences:</strong> Lantern festivals and light shows with French-language guides</li>
+                <li><strong>Guided Cultural Tours:</strong> Curated experiences with French-speaking guides explaining Ramadan traditions</li>
+                <li><strong>"Introduction to Iftar" Experiences:</strong> Tourist-friendly Iftar meals with cultural context provided</li>
+                <li><strong>Fashion & Design Elements:</strong> Exhibitions featuring modern interpretations of traditional dress and decor</li>
+            </ul>
+            
+            <h3>3. Content Strategy</h3>
+            <p>Develop French-language content that addresses specific interests and concerns:</p>
+            <ul>
+                <li><strong>"Tourist Guide to Ramadan":</strong> Practical information about dining options and cultural etiquette</li>
+                <li><strong>Testimonials:</strong> Feature stories from French visitors who have experienced Ramadan in Abu Dhabi</li>
+                <li><strong>Influencer Partnerships:</strong> Collaborate with French travel influencers to showcase Ramadan experiences</li>
+                <li><strong>Culinary Focus:</strong> Highlight the gastronomic aspects of Ramadan that would appeal to French travelers</li>
+            </ul>
+        </div>
+        
+        <div class="strategy-card">
+            <h3><i class="fas fa-star"></i> Proposed Campaign: "Ramadan: A Cultural Journey"</h3>
+            <p>Launch a campaign that positions Ramadan in Abu Dhabi as a unique cultural journey that French travelers can experience without compromising on comfort or accessibility. The campaign would highlight the diverse range of experiences available and address practical concerns.</p>
+            <p><strong>Key Campaign Elements:</strong></p>
+            <ul>
+                <li>Video series featuring French travelers experiencing different aspects of Ramadan</li>
+                <li>Social media campaign with #RamadanJourney hashtag in French and English</li>
+                <li>Partnerships with French travel agencies and cultural institutions</li>
+                <li>Dedicated French-language microsite with practical information and booking options</li>
+            </ul>
+        </div>
+        
+        <div class="action-steps">
+            <h3><i class="fas fa-tasks"></i> Implementation Timeline</h3>
+            <ul>
+                <li><strong>Q3 2025 (July-September):</strong> French-language content development and experience design</li>
+                <li><strong>Q4 2025 (October-November):</strong> Content creation and asset development</li>
+                <li><strong>Q4 2025 (Mid-December):</strong> Campaign launch in France (61 days before Ramadan)</li>
+                <li><strong>Q1 2026 (January-February):</strong> Influencer trips and content amplification</li>
+                <li><strong>Ramadan 2026 (February 17 - March 21):</strong> French-language experience delivery and real-time optimization</li>
+            </ul>
+        </div>
+        
+        <div class="navigation">
+            <a href="qatar-market.html" class="nav-button"><i class="fas fa-arrow-left"></i> Previous: Qatar Market</a>
+            <a href="italy-market.html" class="nav-button next">Next: Italy Market <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Research & Insights Unit | Strategic Marketing & Communications | Department of Culture and Tourism – Abu Dhabi</p>
+        </div>
+    </footer>
+</body>
+</html>

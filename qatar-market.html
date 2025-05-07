@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qatar Market | Ramadan 2026 Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4285f4;
+            --primary-light: #1a2233;
+            --primary-dark: #8ab4f8;
+            --secondary: #34a853;
+            --secondary-light: #1a2a1e;
+            --warning: #fbbc04;
+            --warning-light: #332a1a;
+            --danger: #ea4335;
+            --danger-light: #331f1e;
+            --gray-100: #1e1e1e;
+            --gray-200: #2d2d2d;
+            --gray-300: #3d3d3d;
+            --gray-400: #4d4d4d;
+            --gray-500: #777777;
+            --gray-600: #a0a0a0;
+            --gray-700: #c0c0c0;
+            --gray-800: #e0e0e0;
+            --gray-900: #f0f0f0;
+            --bg-color: #000000;
+            --card-bg: #121212;
+            --section-bg: #181818;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--gray-800);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #8d1b3d, #6b1530);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin: 30px 0 20px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: var(--gray-900);
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            background-color: var(--section-bg);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid var(--gray-300);
+        }
+        
+        .insight-card {
+            background-color: var(--primary-light);
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .strategy-card {
+            background-color: var(--warning-light);
+            border-left: 5px solid var(--warning);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .metric-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid var(--gray-300);
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 10px 0;
+        }
+        
+        .metric-value-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 10px 0;
+            line-height: 1.3;
+        }
+        
+        .metric-label {
+            font-size: 1rem;
+            color: var(--gray-600);
+        }
+        
+        .action-steps {
+            background-color: var(--secondary-light);
+            border-left: 5px solid var(--secondary);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .action-steps h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        
+        .action-steps ul {
+            margin-left: 20px;
+        }
+        
+        .action-steps li {
+            margin-bottom: 10px;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .nav-button i {
+            margin-right: 8px;
+        }
+        
+        .nav-button.next i {
+            margin-right: 0;
+            margin-left: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid var(--gray-300);
+            color: var(--gray-600);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Qatar Market Analysis</h1>
+            <p>Ramadan 2026 Campaign Strategy & Insights</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2><i class="fas fa-chart-pie"></i> Market Overview</h2>
+            <p>The Qatar market shows deep understanding of Ramadan (94%) with the highest interest in sharing Iftar meals (100%) and strong interest in charitable activities (89%). Qatar visitors place particular emphasis on the charitable spirit of Ramadan and community-centered experiences.</p>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Deep Understanding of Ramadan</div>
+                    <div class="metric-value">94%</div>
+                    <div>Strong knowledge of traditions</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Interest in Sharing Iftar</div>
+                    <div class="metric-value">100%</div>
+                    <div>Highest among all markets</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Interest in Zakat Charity</div>
+                    <div class="metric-value">89%</div>
+                    <div>Strong focus on charitable giving</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Market Potential Score</div>
+                    <div class="metric-value">90</div>
+                    <div>High potential for engagement</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-calendar-alt"></i> Booking Behavior & Timeline</h2>
+            <p>Qatar travelers demonstrate a relatively short booking window compared to European markets, with spontaneous decision-making and a preference for last-minute travel arrangements, particularly for regional destinations:</p>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Average Lead Time</div>
+                    <div class="metric-value">30</div>
+                    <div>Days before travel</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Booking Window</div>
+                    <div class="metric-value-text">Short-term</div>
+                    <div>Predominantly within 4 weeks</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Campaign Launch</div>
+                    <div class="metric-value-text">Mid January</div>
+                    <div>Optimal timing for 2026</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Decision Drivers</div>
+                    <div class="metric-value-text">Charitable Activities</div>
+                    <div>Primary consideration factor</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-chart-line"></i> Intra-GCC Competitive Analysis</h2>
+            <p>Understanding the competitive landscape within GCC markets helps position Abu Dhabi's unique Ramadan offerings for Qatar visitors who have multiple regional options:</p>
+            
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Top GCC Competitor</div>
+                    <div class="metric-value-text">Saudi Arabia</div>
+                    <div>85% consideration</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Abu Dhabi Advantage</div>
+                    <div class="metric-value-text">Charitable Initiatives</div>
+                    <div>Diverse giving opportunities</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Community Experience</div>
+                    <div class="metric-value">92%</div>
+                    <div>Importance of community engagement</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Positioning Strategy</div>
+                    <div class="metric-value-text">Charitable Hub</div>
+                    <div>vs. competitive set</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="insight-card">
+            <h3><i class="fas fa-lightbulb"></i> Key Insight: Charitable Focus</h3>
+            <p>Qatar visitors show a unique combination of interest in both the social aspects of Ramadan (Iftar meals: 100%) and the charitable aspects (Zakat: 89%). This creates an opportunity to position Abu Dhabi as a destination where visitors can engage in meaningful charitable activities while enjoying authentic social experiences during Ramadan.</p>
+        </div>
+        
+        <div class="card">
+            <h2><i class="fas fa-bullseye"></i> Strategic Recommendations</h2>
+            
+            <h3>1. Positioning Strategy: "Charitable Spirit of Ramadan"</h3>
+            <p>Position Abu Dhabi as a destination that embodies the charitable spirit of Ramadan, offering visitors opportunities to participate in meaningful giving while enjoying authentic social experiences. Emphasize the combination of charitable activities and community engagement.</p>
+            
+            <h3>2. Experience Development</h3>
+            <p>Create experiences that combine charitable giving with social engagement:</p>
+            <ul>
+                <li><strong>Charity Iftars:</strong> Special Iftar events where a portion of proceeds goes to charity</li>
+                <li><strong>Volunteer Opportunities:</strong> Organized volunteer activities for visitors during Ramadan</li>
+                <li><strong>Charitable Tours:</strong> Guided tours of charitable initiatives in Abu Dhabi</li>
+                <li><strong>Giving Packages:</strong> Special travel packages that include charitable donations</li>
+            </ul>
+            
+            <h3>3. Cause-Related Marketing</h3>
+            <p>Develop marketing initiatives that connect travel to charitable causes:</p>
+            <ul>
+                <li><strong>Donation Matching:</strong> Match visitor donations to local charities during Ramadan</li>
+                <li><strong>Impact Reporting:</strong> Provide visitors with reports on the impact of their charitable contributions</li>
+                <li><strong>Charity Partnerships:</strong> Form partnerships with respected Qatari charitable organizations</li>
+                <li><strong>Social Proof:</strong> Showcase testimonials from previous visitors about their charitable experiences</li>
+            </ul>
+        </div>
+        
+        <div class="strategy-card">
+            <h3><i class="fas fa-star"></i> Proposed Campaign: "Ramadan of Giving"</h3>
+            <p>Launch a campaign that positions Abu Dhabi as a destination where visitors can experience the true charitable spirit of Ramadan. The campaign would highlight the various ways visitors can give back while enjoying authentic Ramadan experiences in Abu Dhabi.</p>
+            <p><strong>Key Campaign Elements:</strong></p>
+            <ul>
+                <li>Video series showcasing the impact of charitable initiatives during Ramadan</li>
+                <li>Social media campaign with #RamadanOfGiving hashtag</li>
+                <li>Partnerships with Qatari charitable organizations and influencers</li>
+                <li>Special "Giving Packages" that include charitable donations with bookings</li>
+            </ul>
+        </div>
+        
+        <div class="action-steps">
+            <h3><i class="fas fa-tasks"></i> Implementation Timeline</h3>
+            <ul>
+                <li><strong>Q3 2025 (July-September):</strong> Charitable partnership development and experience design</li>
+                <li><strong>Q4 2025 (October-December):</strong> Content creation and giving package development</li>
+                <li><strong>Q1 2026 (Mid-January):</strong> Campaign launch in Qatar (30 days before Ramadan)</li>
+                <li><strong>Q1 2026 (Late January-February):</strong> Charitable organization partnerships activation</li>
+                <li><strong>Ramadan 2026 (February 17 - March 21):</strong> Charitable experience delivery and impact reporting</li>
+            </ul>
+        </div>
+        
+        <div class="navigation">
+            <a href="ksa-market.html" class="nav-button"><i class="fas fa-arrow-left"></i> Previous: KSA Market</a>
+            <a href="france-market.html" class="nav-button next">Next: France Market <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Research & Insights Unit | Strategic Marketing & Communications | Department of Culture and Tourism – Abu Dhabi</p>
+        </div>
+    </footer>
+</body>
+</html>
